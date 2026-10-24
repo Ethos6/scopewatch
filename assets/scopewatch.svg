@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 160" role="img" aria-labelledby="title desc">
+  <title id="title">ScopeWatch</title>
+  <desc id="desc">A teal scope ring around a protected web surface.</desc>
+  <defs>
+    <linearGradient id="g" x1="24" y1="20" x2="138" y2="145" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#70E1D1"/><stop offset="1" stop-color="#4EA8FF"/>
+    </linearGradient>
+  </defs>
+  <rect x="8" y="8" width="144" height="144" rx="36" fill="#0B1324"/>
+  <circle cx="80" cy="80" r="48" fill="none" stroke="url(#g)" stroke-width="7"/>
+  <path d="M80 21v18M80 121v18M21 80h18m82 0h18" stroke="#D8F7F1" stroke-width="4" stroke-linecap="round"/>
+  <path d="m80 51 24 10v17c0 17-10 28-24 35-14-7-24-18-24-35V61l24-10Z" fill="#10263A" stroke="url(#g)" stroke-width="4" stroke-linejoin="round"/>
+  <path d="m69 80 8 8 15-17" fill="none" stroke="#B6FFF1" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+
