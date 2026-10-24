@@ -18,5 +18,5 @@ jobs:
       - name: Compile Python modules
         run: python -m compileall -q .
       - name: Build wheel
-        run: python -m pip wheel --no-deps --no-build-isolation --wheel-dir dist .
+        run: python -m pip wheel --no-deps --wheel-dir dist .
 
