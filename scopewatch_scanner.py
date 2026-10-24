@@ -148,6 +148,8 @@ def scan(raw_target: str, timeout: float = 5.0, allow_private: bool = False) -> 
                     severity = "high" if days_left < 0 else "medium" if days_left <= 30 else "info"
                     recommendation = "Renew the certificate and verify automated renewal." if days_left <= 30 else ""
                     result.findings.append(_finding("certificate-expiry", "TLS certificate expiry", severity, state, f"Certificate expires in {days_left} day(s).", recommendation))
+                except ValueError:
+                    result.errors.append(f"certificate: unrecognized expiry date {expires!r}")
         if "strict-transport-security" not in headers:
             result.findings.append(_finding("hsts", "HTTP Strict Transport Security", "medium", "missing", "The homepage response did not include HSTS.", "After confirming HTTPS works for all subdomains, add a suitable Strict-Transport-Security policy."))
 
